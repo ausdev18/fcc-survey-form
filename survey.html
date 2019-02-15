@@ -1,0 +1,64 @@
+<html>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <main class="container">
+    <h1 id="title">Developer Survey</h1>
+    <form action="" id="survey-form">
+      <p id="description">Thanks for taking the time to complete this form about your development interests and skills.</p>
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" class="top-inputs" id="name" placeholder="Name" required autofocus>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" class="top-inputs" id="email" placeholder="Email" required>
+      <label for="number" id="number-label">Years of experience:</label>
+      <input type="number" id="number" min="0" max="60" placeholder="0-60" required>
+      <label for="job">What is your position?</label>
+      <select name="job" id="dropdown">
+<!--         <option id="job-0" value="job-0" disabled selected>Select:</option> -->
+        <option value="job-1">Junior Developer</option>
+        <option value="job-2">Mid-level developer</option>
+        <option value="job-3">Senior developer</option>
+        <option value="job-4">CTO</option>
+        <option value="job-5">Other</option>
+      </select>
+      <fieldset class="checkbox-vertical">
+        <legend>Languages</legend>
+        <label for="html-lang" id="html-label" value="html">HTML</label>
+        <input type="checkbox" name="html" value="html">
+        <label for="css" id="css-lang">CSS</label>
+        <input type="checkbox" id="css-lang" value="css" name="css">
+        <label for="js" id="js-label">JavaScript</label>
+        <input type="checkbox" id="js-lang" value="js" name="js">
+        <label for="php" id="php-label">PHP</label>
+        <input type="checkbox" id="php-lang" value="php" name="php">
+        <label for="json" id="json-label">JSON</label>
+        <input type="checkbox" id="json-lang" value="json" name="json">
+        <label for="ruby" id="ruby-label">Ruby</label>
+        <input type="checkbox" id="ruby-lang" value="ruby" name="ruby">
+        <label for="sql" id="sql-label">SQL</label>
+        <input type="checkbox" id="sql-lang" value="sql" name="sql">
+      </fieldset>
+      <fieldset class="favourite-ide">
+        <legend>What is your favourite IDE?<legend>
+        <label for="ides" id="atom-label">Atom</label>
+        <input type="radio" id="atom-ide" name="ides" value="atom">
+        <label for="ides" id="vscode-label">VS Code</label>
+        <input type="radio" id="vscode-ide" name="ides" value="vscode">
+        <label for="ides" id="sublime-label">Sublime Text</label>
+        <input type="radio" id="sublime-ide" name="ides" value="sublime">
+        <label for="ides" id="notepad-label">Notepad++</label>
+        <input type="radio" id="notepad-ide" name="ides" value="atom">
+      </fieldset>
+      <fieldset class="url-list">
+        <legend>What websites or podcasts would you recommend?<legend/>
+        <input type="url" name="suggest-1" placeholder="www.google.com">
+        <input type="url" name="suggest-2" placeholder="www.google.com">
+        <input type="url" name="suggest-3" placeholder="www.google.com">
+      </fieldset>
+      <label for="advice" id="advice-label">What advice would you give to a code newbie?</label>
+      <textarea name="advice" id="" cols="60" rows="10" maxlength="500" placeholder="Up to 100 characters"></textarea>
+      <button type="submit" id="submit">I'm done</button>
+    </form>
+  </main>
+  
+</body>
+</html>
